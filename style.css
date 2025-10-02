@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: auto;
+  margin: 1em auto;
+  padding: 80px;
+  background-image: url('素材\背景white.jpg') ;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /*vw(ビューポート)：表示されている画面の幅1％を1単位*/
+  background-color:whitesmoke ;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 10px 20px;
+}
+
+.title {
+  margin-right: 0;
+  white-space: nowrap; /*タイトルを折り返さない*/
+}
+
+.menu-group {
+  display: flex;
+  list-style: none;
+}
+
+.menu-item + .menu-item {
+  margin-left: 15px; /*項目同士の間隔*/
+}
+
+.menu-item a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 8px;
+  display: inline-block;
+  font-weight: bold;
+  color:darkslategrey;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+section {
+  margin-top: 30px;
+}
+
+#line {
+  display: block;
+  padding: 0;
+  color: #404040;
+  border-left: solid 6px #1fa67a;/*左側の線*/
+  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  background: whitesmoke;
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+h3 {
+    padding: 5px;
+}
