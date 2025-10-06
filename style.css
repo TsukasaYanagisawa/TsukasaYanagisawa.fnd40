@@ -4,6 +4,10 @@
   padding: 0;
 } 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -75,6 +79,60 @@ section {
   font-weight: bold;
 }
 
+#line2 {
+  display: block;
+  padding: 0;
+  color: #404040;
+  border-left: solid 10px #1fa67a;/*左側の線*/
+  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  background:rgb(218, 218, 218) ;
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+#line3 {
+  display: block;
+  padding: 0;
+  color: #404040;
+  border-left: solid 10px #1fa67a;/*左側の線*/
+  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  background:rgb(218, 218, 218) ;
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+#line4 {
+  display: block;
+  padding: 0;
+  color: #404040;
+  border-left: solid 10px #1fa67a;/*左側の線*/
+  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  background:rgb(218, 218, 218) ;
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+#scroll {
+  padding-top: 80px;
+  padding-top: -80px;
+}
+
+#scroll2 {
+  padding-top: 80px;
+  padding-top: -80px;
+}
+
+#scroll3 {
+  padding-top: 80px;
+  padding-top: -80px;
+}
+
 @media (min-width: 1025px) {
 .proin {
   display: flex;
@@ -102,16 +160,14 @@ h3 a {
     text-decoration: none;
 }
 
-#clear {
-  padding-left: 35px;
-  display: none;
+#link {
+  font-size: 15px;
+  font-style: normal;
 }
 
-.workout-area {
-  position: relative;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
+#clear {
+  padding-left: 27px;
+  display: none;
 }
 
 #Workout-time {
@@ -123,13 +179,13 @@ h3 a {
 }
 
 #reps {
-  padding-left: 85px ;
+  padding-left: 91px ;
   padding-top: 10px ;
   padding-bottom: 10px ;
 }
 
 #myTextbox {
-  width: 120px;
+  width: 100px;
   text-align: center;
 }
 
@@ -139,4 +195,31 @@ h3 a {
 
 #button {
   width: 60px;
+  margin-left: 0px;
+}
+
+#Reset {
+  width: 60px;
+  margin-left: 0px;
+}
+
+.pagetop {
+  font-size: 40px;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: .3s;
+  color: #1fa67a;
+  background: rgb(218, 218, 218);
+  opacity: 0;
+}
+.pagetop:hover {
+    box-shadow: 0 0 20px #1fa67a;
 }
