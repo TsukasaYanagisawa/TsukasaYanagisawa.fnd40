@@ -8,22 +8,22 @@
    </head>
 
    <body>
-      <div class="container">
+      <div class="container" id="home">
          <header>
             <h1 class="title">Console.log ( My Learning.JavaScript )</h1>
             <nav class="nav">
                <ul class="menu-group">
-                  <li class="menu-item"><a href="#">Profile</a></li>
-                  <li class="menu-item"><a href="#">Workout Challenge</a></li>
-                  <li class="menu-item"><a href="#">Cheat Sheet</a></li>
-                  <li class="menu-item"><a href="#">Sources</a></li>
+                  <li class="menu-item"><a href="#home">Profile</a></li>
+                  <li class="menu-item"><a href="#scroll">Workout Challenge</a></li>
+                  <li class="menu-item"><a href="#scroll2">Cheat Sheet</a></li>
+                  <li class="menu-item"><a href="#scroll3">Sources</a></li>
                </ul>
             </nav>
          </header>
-         <h2 id="line">Profile</h2>
+         <h2  id="line">Profile</h2>
          <section id="profile">
-            <h3>やなぎさわ　つかさ</h3>
-            <h2>柳澤 司</h2>
+            <h3 id="hurigana">やなぎさわ つかさ</h3>
+            <h2>柳澤　司</h2>
             <div class="proin">
             <img src="profile.jpeg" style="width: 500px; height: auto;">
             <p id="introduction">
@@ -38,32 +38,40 @@
                マイペースに楽しく続けていくので、よろしくお願いします！<br>
             </p><br>
             </div>
+               <div id="scroll"></div>
                <div class="workout-area"><br>
-                  <h2 id="line">🏋🏽‍♂️Workout Challenge🏋🏽</h2><br>
-                  <input type="text" placeholder="何回持ち上げる？" id="myTextbox">
-                  <input type="button" value="Snatch!" id="button"></input><br><br>
+                  <h2 id="line2">🏋🏽‍♂️Workout Challenge🏋🏽</h2><br>
+                  <div class="controls">
+                     <h3>何回持ち上げる？</h3>
+                     <input type="text" placeholder="数値を入力" id="myTextbox">
+                     <input type="button" value="Snatch!" id="button"></input>
+                     <input type="button" value="Reset" id="Reset"></input><br><br>
+                  </div>
                   <div id="Workout-time">
-                     <h2 id="clear">🎉Nice🎉</h2>
+                     <h2 id="clear">💪Beast!🔥</h2>
                      <h2 id="reps">0</h2>
                      <img src="バーベルを持ち上げる人のシルエットアイコン.jpg" style="width: 200px; height: auto; display: block ;" id="Snatch">
                      <img src="バーベルを持ち上げる人のシルエット02アイコン.jpg" style="width: 200px; height: auto; display: none;" id="Snatch2">
                   </div>
                </div>
-         </section>
-         
-         <h2 id="line">Cheat Sheet</h2>
+            </section>
+            
+         <div id="scroll2"></div>
+         <h2 id="line3">Cheat Sheet</h2>
          <section id="sheet">
-            <p>ここに自己紹介の内容を書く</p>
+            <p>Cheat1</p>
+            <p>Cheat2</p>
+            <p>Cheat3</p>
+            <p>Cheat4</p>
+            <p>Cheat5</p>
          </section>
          
-         <h2 id="line">Sources</h2>
+         <div id="scroll3"></div>
+         <h2 id="line4">Sources</h2>
          <section id="link">
             <h3>
                <a href="https://style.potepan.com/articles/22186.html">
                   ▪HTMLとCSSでヘッダーを作成する方法！レイアウトの基本を学ぼう！
-               </a><br>
-               <a href="beiz.jp">
-                  ▪BEIZ images (背景素材)
                </a><br>
                <a href="https://www.silhouette-illust.com/keyword/%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0">
                   ▪無料のAi・PNG白黒シルエットイラスト
@@ -71,9 +79,13 @@
                <a href="https://askne.blog/2024/08/17/%E3%80%90javascript%E3%80%91%E4%B8%80%E5%AE%9A%E6%99%82%E9%96%93%E3%81%AE%E9%96%93%E3%81%AB%E7%94%BB%E5%83%8F%E3%82%92%E4%BA%A4%E4%BA%92%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B/">
                   ▪【JavaScript】一定時間の間に画像を交互に表示させる
                </a><br>
+               <a href="https://zenn.dev/kosuke_shopify/articles/9f07a76092bd9c">
+                  ▪【JavaScript】 クリックすると画面の一番上までスクロールする仕様
+               </a><br>
             </h3>
          </section>
       </div>
+      <div class="pagetop">Top</div>
    <script src="script.js"></script>
    </body>
    </html>
