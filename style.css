@@ -13,7 +13,6 @@ body {
   width: auto;
   margin: 1em auto;
   padding: 80px;
-  background-image: url('素材\背景white.jpg') ;
   background-size: cover;
 }
 
@@ -22,12 +21,13 @@ header {
   top: 0;
   left: 0;
   width: 100vw; /*vw(ビューポート)：表示されている画面の幅1％を1単位*/
-  background-color:whitesmoke ;
+  background-color:rgb(218, 218, 218) ;
   z-index: 1000;
   display: flex;
   align-items: center;
   gap: 50px;
   padding: 10px 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 
 .title {
@@ -50,7 +50,7 @@ header {
   padding: 5px 8px;
   display: inline-block;
   font-weight: bold;
-  color:darkslategrey;
+  color:#1fa67a;
 }
 
 section h2 {
@@ -66,15 +66,77 @@ section {
   display: block;
   padding: 0;
   color: #404040;
-  border-left: solid 6px #1fa67a;/*左側の線*/
+  border-left: solid 10px #1fa67a;/*左側の線*/
   border-bottom: solid 2px #dadada;/*下に灰色線*/
-  background: whitesmoke;
+  background:rgb(218, 218, 218) ;
   margin-bottom: 5px;/*下のバーとの余白*/
   line-height: 1.5;
   padding: 0.5em;
   font-weight: bold;
 }
 
-h3 {
-    padding: 5px;
+@media (min-width: 1025px) {
+.proin {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.proin img {
+  max-width: 600px;
+  height: auto;
+  width: auto;
+}
+
+#introduction {
+  max-width: 700px;
+  line-height: 2;
+  letter-spacing: 0.3em;
+  color: #242424;
+  font-size: medium;
+}
+}
+
+h3 a {
+    padding-left: 10px ;
+    text-decoration: none;
+}
+
+#clear {
+  padding-left: 35px;
+  display: none;
+}
+
+.workout-area {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+#Workout-time {
+  position: relative;
+}
+
+#Workout-time #reps {
+  position: absolute;
+}
+
+#reps {
+  padding-left: 85px ;
+  padding-top: 10px ;
+  padding-bottom: 10px ;
+}
+
+#myTextbox {
+  width: 120px;
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+#button {
+  width: 60px;
 }
