@@ -1,5 +1,6 @@
 'use strict'
 // 1行目に記載している 'use strict' は削除しないでください
+
 const button = document.getElementById("button");
 const reset = document.getElementById("Reset");
 const myText = document.getElementById("myTextbox")
@@ -43,7 +44,6 @@ reset.addEventListener(`click`,resetClick);
 const pagetop_btn = document.querySelector(".pagetop");
 
 pagetop_btn.addEventListener("click", scroll_top);
-
 function scroll_top() {
   window.scroll({ top: 0, behavior: "smooth" });
 }
