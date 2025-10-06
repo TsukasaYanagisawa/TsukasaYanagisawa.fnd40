@@ -96,10 +96,10 @@ section {
   display: block;
   padding: 0;
   color: #404040;
-  border-left: solid 10px #1fa67a;/*左側の線*/
-  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  border-left: solid 10px #1fa67a;
+  border-bottom: solid 2px #dadada;
   background:rgb(218, 218, 218) ;
-  margin-bottom: 5px;/*下のバーとの余白*/
+  margin-bottom: 5px;
   line-height: 1.5;
   padding: 0.5em;
   font-weight: bold;
@@ -109,10 +109,10 @@ section {
   display: block;
   padding: 0;
   color: #404040;
-  border-left: solid 10px #1fa67a;/*左側の線*/
-  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  border-left: solid 10px #1fa67a;
+  border-bottom: solid 2px #dadada;
   background:rgb(218, 218, 218) ;
-  margin-bottom: 5px;/*下のバーとの余白*/
+  margin-bottom: 5px;
   line-height: 1.5;
   padding: 0.5em;
   font-weight: bold;
@@ -222,4 +222,74 @@ h3 a {
 }
 .pagetop:hover {
     box-shadow: 0 0 20px #1fa67a;
+}
+
+.last {
+  width: auto;
+  margin: 30px auto;
+}
+.last input {
+  display: none;
+}
+
+.last label {
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  padding: 0.3em 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  color: #1fa67a;
+  border: 2px solid #1fa67a;
+  border-radius: 3px;
+}
+
+.last label::after {
+  position: absolute;
+  content: '';
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  background: #1fa67a;
+  clip-path: polygon(0 40%, 40% 40%, 40% 0, 60% 0, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0 60%);
+}
+.last label:hover::after {
+  color: #ffffff;
+}
+
+.last label:hover {
+  transition: all 0.3s;
+  color: #ffffff;
+  background: #1fa67988;
+}
+.last label:hover::after {
+  background: #ffffff;
+}
+
+.last input:checked ~ label::after {
+  background: #1fa67a;
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.last input:checked ~ label:hover::after {
+  background: #ffffff;
+}
+.last div.cp_container2 {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  height: 0;
+  margin-top: -1px;
+}
+.last input:checked ~ div.cp_container2 {
+  transition: height 0.5s ease-in-out;
+}
+
+.last input:checked ~ div.cp_container2 {
+  height: auto;
 }
